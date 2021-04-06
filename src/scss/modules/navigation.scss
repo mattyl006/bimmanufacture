@@ -1,0 +1,63 @@
+@import "src/scss/variables";
+
+.navigation {
+  width: calc(100% - 32px);
+  background-color: $lightColorTransparent;
+  border-radius: 6px;
+
+  position: fixed;
+  top: 8px;
+  left: 16px;
+
+  &__container {
+    height: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__home {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+  }
+
+  &__logo {
+    width: auto;
+    height: 32px;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+
+  }
+
+  &__button {
+    border: none;
+    background: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__language {
+    width: 24px;
+    height: 16px;
+    margin-right: 12px;
+  }
+
+  &__hamburger {
+    width: 20px;
+    height: 18px;
+    margin: 0 12px;
+  }
+}

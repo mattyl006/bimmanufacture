@@ -1,1 +1,98 @@
-$wtf: #2D2241;
+// colors
+
+$lightColor: #F6F6F6;
+$darkColor: #28282D;
+
+$lightColorTransparent: rgba(#F6F6F6, 0.8);
+$lightColorMoreTransparent: rgba(#F6F6F6, 0.6);
+$darkColorTransparent: rgba(#28282D, 0.2);
+$darkColorLessTransparent: rgba(#28282D, 0.9);
+
+$red: #FF0000;
+$blue: #0000FF;
+$green: #42DE42;
+
+// font styles (Light - 300, Regular - 400, Medium - 500)
+
+@mixin normal {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin normal_mobile {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+@mixin h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+@mixin h1_mobile {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin h2 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+@mixin h2_mobile {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@mixin list_item {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@mixin list_item_mobile {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+@mixin nav_item_mobile {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+@mixin counter_text {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 20px;
+}
+
+@mixin counter_text_mobile {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 14px;
+}
+
+
+@mixin counter_number {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 20px;
+}
+
+@mixin counter_number_mobile {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 14px;
+}
