@@ -43,8 +43,14 @@
 
     @media (min-width: 768px) {
       top: -32px;
+      height: calc(100vh + 32px);
+    }
+
+    @media (min-width: 1700px) {
+      top: -32px;
       width: 100%;
-      height: auto;
+      min-height: calc(100vh + 32px);
+      background-color: $darkColor;
     }
   }
 }
