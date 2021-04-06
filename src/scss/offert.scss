@@ -8,9 +8,20 @@
   align-items: center;
   flex-direction: column;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
   &__header {
     @include h2_mobile;
     margin: 0 0 36px 0;
+
+    @media (min-width: 768px) {
+      @include h2;
+      margin: 0 80px 0 0;
+      text-align: center;
+      max-width: 220px;
+    }
   }
 
   &__list {
@@ -24,15 +35,36 @@
     margin-bottom: 24px;
     position: relative;
 
+    &--last {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 56px;
+      margin-bottom: 36px;
+
+      &--last {
+        margin-bottom: 0;
+      }
+    }
+
     &:before {
       content: '';
       display: block;
       width: 24px;
       height: 26px;
       position: absolute;
-      background-image: url("../assets/img/dot_list.svg");
+      background-image: url("../assets/img/dot_mobile.svg");
       top: -4px;
       left: 0;
+
+      @media (min-width: 768px) {
+        background-image: url("../assets/img/dot_desktop.svg");
+        width: 34px;
+        height: 42px;
+        top: -8px;
+        left: 0;
+      }
     }
   }
 
@@ -43,6 +75,10 @@
 
     &:hover {
       opacity: 0.5;
+    }
+
+    @media (min-width: 768px) {
+      @include list_item;
     }
   }
 }
