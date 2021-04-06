@@ -2,9 +2,9 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
 
-@import "modules/hero";
-@import "modules/navigation";
-@import "modules/offert";
+@import "hero";
+@import "navigation";
+@import "offert";
 
 html {
   box-sizing: border-box;
@@ -20,6 +20,7 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   color: $darkColor;
+  background-color: $lightColor;
 
   background-image: url("../assets/img/bg_mobile.svg");
   background-position: center center;

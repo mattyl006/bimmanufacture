@@ -54,18 +54,21 @@ $green: #42DE42;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
+  text-decoration: none;
 }
 
 @mixin list_item_mobile {
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
+  text-decoration: none;
 }
 
 @mixin nav_item_mobile {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+  text-decoration: none;
 }
 
 @mixin counter_text {

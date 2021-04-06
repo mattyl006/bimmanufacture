@@ -1,0 +1,48 @@
+@import "variables";
+
+.offert {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__header {
+    @include h2_mobile;
+    margin: 0 0 36px 0;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding-left: 36px;
+    margin-bottom: 24px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 26px;
+      position: absolute;
+      background-image: url("../assets/img/dot_list.svg");
+      top: -4px;
+      left: 0;
+    }
+  }
+
+  &__link {
+    color: $darkColor;
+    @include list_item_mobile;
+    transition: opacity ease-in-out 0.4s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
