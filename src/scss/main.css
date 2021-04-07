@@ -808,7 +808,7 @@
   z-index: 6;
 }
 
-.visible {
+.visible-popUp {
   display: flex;
   animation: popUpAnimation ease-in-out 0.8s;
 }
