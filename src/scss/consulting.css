@@ -1,0 +1,26 @@
+.consulting {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consulting__header {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+.consulting__paragraph {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  margin: 0 0 32px 0;
+}
+.consulting__placeholder {
+  width: 300px;
+  height: 178px;
+  background-color: #C4C4C4;
+}
+
+/*# sourceMappingURL=consulting.css.map */
