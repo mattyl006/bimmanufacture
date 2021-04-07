@@ -9,6 +9,7 @@ module.exports = {
     navObserver: "./src/js/navObserver.js",
     counter: "./src/js/counter.js",
     cardsSwitch: "./src/js/cardsSwitch.js",
+    popUp: "./src/js/popUp",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -82,7 +83,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "navigation", "navObserver", "counter", "cardsSwitch"],
+      chunks: ["index", "navigation", "navObserver", "counter", "cardsSwitch", "popUp"],
       filename: "index.html",
     }),
   ],
