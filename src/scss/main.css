@@ -667,6 +667,9 @@
   }
 }
 
+.pop-up {
+  display: none;
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
