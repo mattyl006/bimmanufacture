@@ -73,7 +73,7 @@
   &:after {
     content: "";
     position: absolute;
-    background-color: $lightColor;
+    background-color: $lightColorTransparent;
     filter: blur(4px);
     width: 120%;
     height: 24px;
