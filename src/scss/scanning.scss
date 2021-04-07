@@ -1,28 +1,60 @@
 @import "variables";
 
 .scanning {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__header {
-
+    @include h2_mobile;
+    margin: 0 0 24px 0;
   }
 
   &__paragraph {
-
+    @include normal_mobile;
+    margin: 0 0 12px 0;
+    padding: 0 8px;
   }
 
   &__grid {
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   &__icon {
-
+    width: 48px;
+    height: 48px;
   }
 
   &__counter {
-
+    @include counter_text_mobile;
+    margin: 0;
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
   }
 
   &__number {
+    @include counter_number_mobile;
 
+    &--red {
+      color: $red;
+      padding: 0 4px;
+    }
+
+    &--blue {
+      color: $blue;
+      padding-right: 4px;
+    }
+
+    &--green {
+      color: $green;
+      padding-right: 4px;
+    }
   }
 }
