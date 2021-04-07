@@ -1,5 +1,3 @@
-console.log("hello observer");
-
 const navHeader = document.querySelector('.navigation--js');
 const heroSection = document.querySelector('.hero--js');
 
