@@ -22,6 +22,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 50vw;
     transition: transform ease-in-out 0.5s;
+
+    @media (min-width: 1024px) {
+      grid-column-gap: 64px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__button-left, &__button-center, &__button-right {
@@ -39,6 +49,20 @@
     }
   }
 
+  &__button-center {
+    @media (min-width: 1024px) {
+      width: calc(220px + 8vw);
+      height: calc(340px + 12vw);
+    }
+  }
+
+  &__button-left, &__button-right {
+    @media (min-width: 1024px) {
+      width: calc(200px + 6vw);
+      height: calc(300px + 10vw);
+    }
+  }
+
   &__switch-left, &__switch-right {
     display: block;
     position: absolute;
@@ -50,24 +74,20 @@
     z-index: 2;
     outline: transparent;
     background: transparent;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   &__switch-left {
     left: calc(10% - 24px);
     background-image: url("../assets/icons/arrow-left.svg");
-
-    @media (min-width: 768px) {
-      display: none;
-    }
   }
 
   &__switch-right {
     right: calc(10% - 24px);
     background-image: url("../assets/icons/arrow-right.svg");
-
-    @media (min-width: 768px) {
-      display: none;
-    }
   }
 }
 

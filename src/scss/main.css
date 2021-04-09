@@ -695,6 +695,16 @@
   grid-column-gap: 50vw;
   transition: transform ease-in-out 0.5s;
 }
+@media (min-width: 1024px) {
+  .realizations__cards {
+    grid-column-gap: 64px;
+  }
+}
+.realizations__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .realizations__button-left, .realizations__button-center, .realizations__button-right {
   border: none;
   outline: transparent;
@@ -708,6 +718,18 @@
 .realizations__button-left:hover, .realizations__button-center:hover, .realizations__button-right:hover {
   transform: scale(1.06);
 }
+@media (min-width: 1024px) {
+  .realizations__button-center {
+    width: calc(220px + 8vw);
+    height: calc(340px + 12vw);
+  }
+}
+@media (min-width: 1024px) {
+  .realizations__button-left, .realizations__button-right {
+    width: calc(200px + 6vw);
+    height: calc(300px + 10vw);
+  }
+}
 .realizations__switch-left, .realizations__switch-right {
   display: block;
   position: absolute;
@@ -720,23 +742,18 @@
   outline: transparent;
   background: transparent;
 }
+@media (min-width: 1024px) {
+  .realizations__switch-left, .realizations__switch-right {
+    display: none;
+  }
+}
 .realizations__switch-left {
   left: calc(10% - 24px);
   background-image: url("../assets/icons/arrow-left.svg");
 }
-@media (min-width: 768px) {
-  .realizations__switch-left {
-    display: none;
-  }
-}
 .realizations__switch-right {
   right: calc(10% - 24px);
   background-image: url("../assets/icons/arrow-right.svg");
-}
-@media (min-width: 768px) {
-  .realizations__switch-right {
-    display: none;
-  }
 }
 
 .transformLeft {
@@ -770,11 +787,55 @@
   z-index: 5;
   padding: 8px;
 }
+@media (min-width: 768px) {
+  .pop-up {
+    flex-direction: row;
+    padding: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .pop-up {
+    width: calc(80% + 176px);
+    min-height: auto;
+    height: 56vh;
+    top: 22vh;
+    left: calc(10% - 88px);
+    padding: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .pop-up {
+    width: 80%;
+    min-height: auto;
+    height: 70vh;
+    top: 15vh;
+    left: 10%;
+    padding: 64px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-up__container {
+    margin: 0 24px 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .pop-up__container {
+    margin: 0 48px 0 0;
+  }
+}
 .pop-up__header {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
   margin: 0 0 24px 0;
+}
+@media (min-width: 1024px) {
+  .pop-up__header {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 0 32px 0;
+  }
 }
 .pop-up__paragraph {
   font-size: 12px;
@@ -783,6 +844,19 @@
   margin: 0 0 24px 0;
   max-width: 280px;
 }
+@media (min-width: 768px) {
+  .pop-up__paragraph {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .pop-up__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 440px;
+  }
+}
 .pop-up__placeholder {
   width: 280px;
   height: 178px;
@@ -790,13 +864,7 @@
 }
 @media (min-width: 768px) {
   .pop-up__placeholder {
-    width: 580px;
-    height: 240px;
-  }
-}
-@media (min-width: 1280px) {
-  .pop-up__placeholder {
-    width: 480px;
+    width: 440px;
     height: 340px;
   }
 }
@@ -813,12 +881,32 @@
   z-index: 6;
 }
 
-.visible-popUp {
+.visible-popUpLeft {
   display: flex;
-  animation: popUpAnimation ease-in-out 0.8s;
+  animation: popUpAnimationLeft ease-in-out 0.8s;
 }
 
-@keyframes popUpAnimation {
+.visible-popUpCenter {
+  display: flex;
+  animation: popUpAnimationCenter ease-in-out 0.8s;
+}
+
+.visible-popUpRight {
+  display: flex;
+  animation: popUpAnimationRight ease-in-out 0.8s;
+}
+
+@keyframes popUpAnimationLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes popUpAnimationCenter {
   from {
     opacity: 0;
     transform: scale(0.1);
@@ -828,15 +916,14 @@
     transform: scale(1);
   }
 }
-@keyframes popUpAnimation2 {
-  0% {
-    transform: scale(0.1);
+@keyframes popUpAnimationRight {
+  from {
+    opacity: 0;
+    transform: translateX(500px) scale(0.1);
   }
-  50% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleX(1);
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
   }
 }
 html {

@@ -15,16 +15,63 @@
   z-index: 5;
   padding: 8px;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    width: calc(80% + 176px);
+    min-height: auto;
+    height: 56vh;
+    top: 22vh;
+    left: calc(10% - 88px);
+    padding: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80%;
+    min-height: auto;
+    height: 70vh;
+    top: 15vh;
+    left: 10%;
+    padding: 64px;
+  }
+
+  &__container {
+    @media (min-width: 768px) {
+      margin: 0 24px 0 0;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 48px 0 0;
+    }
+  }
 
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
+
+    @media (min-width: 1024px) {
+      @include h2;
+      margin: 0 0 32px 0;
+    }
   }
 
   &__paragraph {
     @include normal_mobile;
     margin: 0 0 24px 0;
     max-width: 280px;
+
+    @media (min-width: 768px) {
+      //@include normal;
+      margin: 0;
+    }
+
+    @media (min-width: 1024px) {
+      @include normal;
+      max-width: 440px;
+    }
   }
 
   &__placeholder {
@@ -33,12 +80,7 @@
     background-color: #7F7F7F;
 
     @media (min-width: 768px) {
-      width: 580px;
-      height: 240px;
-    }
-
-    @media (min-width: 1280px) {
-      width: 480px;
+      width: 440px;
       height: 340px;
     }
   }
@@ -57,12 +99,33 @@
   }
 }
 
-.visible-popUp {
+.visible-popUpLeft {
   display: flex;
-  animation: popUpAnimation ease-in-out 0.8s;
+  animation: popUpAnimationLeft ease-in-out 0.8s;
 }
 
-@keyframes popUpAnimation {
+.visible-popUpCenter {
+  display: flex;
+  animation: popUpAnimationCenter ease-in-out 0.8s;
+}
+
+.visible-popUpRight {
+  display: flex;
+  animation: popUpAnimationRight ease-in-out 0.8s;
+}
+
+@keyframes popUpAnimationLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes popUpAnimationCenter {
   from {
     opacity: 0;
     transform: scale(0.1);
@@ -73,14 +136,13 @@
   }
 }
 
-@keyframes popUpAnimation2 {
-  0% {
-    transform: scale(0.1);
+@keyframes popUpAnimationRight {
+  from {
+    opacity: 0;
+    transform: translateX(500px) scale(0.1);
   }
-  50% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleX(1);
+  to {
+    opacity: 1;
+    transform:  translateX(0) scale(1);
   }
 }

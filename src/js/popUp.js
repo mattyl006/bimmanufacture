@@ -11,25 +11,25 @@ const buttonClose2 = document.querySelector('.pop-up__close-2--js');
 const buttonClose3 = document.querySelector('.pop-up__close-3--js');
 
 buttonCardLeft.addEventListener('click', () => {
-   popUp1.classList.add('visible-popUp');
+   popUp1.classList.add('visible-popUpLeft');
 });
 
 buttonCardCenter.addEventListener('click', () => {
-    popUp2.classList.add('visible-popUp');
+    popUp2.classList.add('visible-popUpCenter');
 });
 
 buttonCardRight.addEventListener('click', () => {
-    popUp3.classList.add('visible-popUp');
+    popUp3.classList.add('visible-popUpRight');
 });
 
 buttonClose1.addEventListener('click', () => {
-    popUp1.classList.remove('visible-popUp');
+    popUp1.classList.remove('visible-popUpLeft');
 });
 
 buttonClose2.addEventListener('click', () => {
-    popUp2.classList.remove('visible-popUp');
+    popUp2.classList.remove('visible-popUpCenter');
 });
 
 buttonClose3.addEventListener('click', () => {
-    popUp3.classList.remove('visible-popUp');
+    popUp3.classList.remove('visible-popUpRight');
 });
