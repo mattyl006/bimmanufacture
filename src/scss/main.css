@@ -58,6 +58,7 @@
   left: 0;
   height: calc(100vh + 16px);
   z-index: -1;
+  background-color: #28282D;
 }
 @media (min-width: 768px) {
   .hero__background {
@@ -65,12 +66,16 @@
     height: calc(100vh + 32px);
   }
 }
+@media (max-height: 800px) and (min-width: 768px) {
+  .hero__background {
+    width: 100%;
+  }
+}
 @media (min-width: 1700px) {
   .hero__background {
     top: -32px;
-    width: 100%;
     min-height: calc(100vh + 32px);
-    background-color: #28282D;
+    width: 100%;
   }
 }
 .hero:after {
