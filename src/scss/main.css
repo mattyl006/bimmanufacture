@@ -934,6 +934,101 @@
     transform: translateX(0) scale(1);
   }
 }
+.references {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.references__header {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+@media (min-width: 768px) {
+  .references__header {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 0 64px 0;
+  }
+}
+.references__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 50vw;
+  transition: transform ease-in-out 0.5s;
+}
+@media (min-width: 1024px) {
+  .references__cards {
+    grid-column-gap: 32px;
+  }
+}
+.references__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.references__link {
+  display: block;
+  width: calc(200px + 12vw);
+  height: calc(300px + 20vw);
+  padding: 0;
+  transition: transform ease-in-out 0.4s;
+  background-color: #C4C4C4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.references__link--1 {
+  background-image: url("../assets/img/ref1_pl.png");
+}
+.references__link--2 {
+  background-image: url("../assets/img/ref2_pl.png");
+}
+.references__link--3 {
+  background-image: url("../assets/img/ref3_pl.png");
+}
+.references__link--4 {
+  background-image: url("../assets/img/ref4_pl.png");
+}
+.references__link--5 {
+  background-image: url("../assets/img/ref5.png");
+}
+.references__link:hover {
+  transform: scale(1.06);
+}
+.references__switch-left, .references__switch-right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  outline: transparent;
+  background: transparent;
+}
+@media (min-width: 1024px) {
+  .references__switch-left, .references__switch-right {
+    display: none;
+  }
+}
+.references__switch-left {
+  left: calc(10% - 24px);
+  background-image: url("../assets/icons/arrow-left.svg");
+}
+.references__switch-right {
+  right: calc(10% - 24px);
+  background-image: url("../assets/icons/arrow-right.svg");
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

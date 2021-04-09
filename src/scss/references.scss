@@ -1,0 +1,103 @@
+@import "variables";
+
+.references {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  &__header {
+    @include h2_mobile;
+    margin: 0 0 24px 0;
+
+    @media (min-width: 768px) {
+      @include h2;
+      margin: 0 0 64px 0;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 50vw;
+    transition: transform ease-in-out 0.5s;
+
+    @media (min-width: 1024px) {
+      grid-column-gap: 32px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    width: calc(200px + 12vw);
+    height: calc(300px + 20vw);
+    padding: 0;
+    transition: transform ease-in-out 0.4s;
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--1 {
+      background-image: url("../assets/img/ref1_pl.png");
+    }
+
+    &--2 {
+      background-image: url("../assets/img/ref2_pl.png");
+    }
+
+    &--3 {
+      background-image: url("../assets/img/ref3_pl.png");
+    }
+
+    &--4 {
+      background-image: url("../assets/img/ref4_pl.png");
+    }
+
+    &--5 {
+      background-image: url("../assets/img/ref5.png");
+    }
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+
+  &__switch-left, &__switch-right {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    z-index: 2;
+    outline: transparent;
+    background: transparent;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__switch-left {
+    left: calc(10% - 24px);
+    background-image: url("../assets/icons/arrow-left.svg");
+  }
+
+  &__switch-right {
+    right: calc(10% - 24px);
+    background-image: url("../assets/icons/arrow-right.svg");
+  }
+}
