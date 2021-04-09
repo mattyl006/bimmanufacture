@@ -120,3 +120,27 @@
     background-image: url("../assets/icons/arrow-right.svg");
   }
 }
+
+.switchRight {
+  transform: translateX(calc(-62vw - 200px));
+}
+
+.switchLeft {
+  transform: translateX(calc(62vw + 200px));
+}
+
+.switchRight2 {
+  transform: translateX(calc(2 * (-62vw - 200px)));
+}
+
+.switchLeft2 {
+  transform: translateX(calc(2 * (62vw + 200px)));
+}
+
+.iconLeftTransparent {
+  background-image: url("../assets/icons/arrow-left-transparent.svg");
+}
+
+.iconRightTransparent {
+  background-image: url("../assets/icons/arrow-right-transparent.svg");
+}
