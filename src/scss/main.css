@@ -688,6 +688,14 @@
   line-height: 24px;
   margin: 0 0 24px 0;
 }
+@media (min-width: 768px) {
+  .realizations__header {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 0 64px 0;
+  }
+}
 .realizations__cards {
   display: grid;
   grid-template-rows: 1fr;
