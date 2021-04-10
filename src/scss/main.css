@@ -58,7 +58,7 @@
   left: 0;
   height: calc(100vh + 16px);
   z-index: -1;
-  background-color: #28282D;
+  background-color: #F6F6F6;
 }
 @media (min-width: 768px) {
   .hero__background {
@@ -77,16 +77,6 @@
     min-height: calc(100vh + 32px);
     width: 100%;
   }
-}
-.hero:after {
-  content: "";
-  position: absolute;
-  background-color: rgba(246, 246, 246, 0.8);
-  filter: blur(4px);
-  width: 120%;
-  height: 24px;
-  bottom: 12px;
-  left: -12px;
 }
 
 @keyframes opacityUp {

@@ -56,7 +56,7 @@
     left: 0;
     height: calc(100vh + 16px);
     z-index: -1;
-    background-color: $darkColor;
+    background-color: $lightColor;
 
     @media (min-width: 768px) {
       top: -32px;
@@ -72,16 +72,5 @@
       min-height: calc(100vh + 32px);
       width: 100%;
     }
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    background-color: $lightColorTransparent;
-    filter: blur(4px);
-    width: 120%;
-    height: 24px;
-    bottom: 12px;
-    left: -12px;
   }
 }
