@@ -1161,6 +1161,38 @@
   }
 }
 
+.footer {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    min-height: 112px;
+  }
+}
+.footer__icon {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+}
+@media (min-width: 768px) {
+  .footer__icon {
+    width: 64px;
+    height: 64px;
+    margin-left: 64px;
+  }
+}
+.footer__icon--yt {
+  width: 64px;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .footer__icon--yt {
+    width: 90px;
+  }
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
