@@ -11,7 +11,7 @@
 
 .navigation {
   width: calc(100% - 32px);
-  background-color: $lightColorTransparent;
+  background-color: $darkColorTransparent;
   border-radius: 6px;
   z-index: 2;
   backdrop-filter: blur(6px);
@@ -74,7 +74,7 @@
     top: 36px;
     left: 1%;
     width: 98%;
-    background-color: $lightColorTransparent;
+    background-color: $darkColorLessTransparent;
     border-radius: 0 0 4px 4px;
     opacity: 0;
     transition: background-color ease-in-out 0.4s;
@@ -92,7 +92,7 @@
 
   &__item {
     text-align: center;
-    border-bottom: solid 2px $darkColor;
+    border-bottom: solid 2px $lightColor;
     transition: border-bottom-color ease-in-out 0.4s;
 
     &--last {
@@ -107,7 +107,7 @@
 
   &__link {
     @include nav_item_mobile;
-    color: $darkColor;
+    color: $lightColor;
     text-decoration: none;
     display: block;
     padding: 16px 0;

@@ -99,7 +99,7 @@
 }
 .navigation {
   width: calc(100% - 32px);
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(40, 40, 45, 0.2);
   border-radius: 6px;
   z-index: 2;
   backdrop-filter: blur(6px);
@@ -163,7 +163,7 @@
   top: 36px;
   left: 1%;
   width: 98%;
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(40, 40, 45, 0.9);
   border-radius: 0 0 4px 4px;
   opacity: 0;
   transition: background-color ease-in-out 0.4s;
@@ -181,7 +181,7 @@
 }
 .navigation__item {
   text-align: center;
-  border-bottom: solid 2px #28282D;
+  border-bottom: solid 2px #F6F6F6;
   transition: border-bottom-color ease-in-out 0.4s;
 }
 .navigation__item--last {
@@ -198,7 +198,7 @@
   font-weight: 400;
   line-height: 14px;
   text-decoration: none;
-  color: #28282D;
+  color: #F6F6F6;
   text-decoration: none;
   display: block;
   padding: 16px 0;
