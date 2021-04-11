@@ -386,6 +386,7 @@
 @media (min-width: 1024px) {
   .scanning__container {
     display: flex;
+    position: relative;
   }
 }
 .scanning__paragraph {
@@ -430,6 +431,9 @@
     grid-template-rows: 80px 1fr 80px 1fr 80px 1fr;
     grid-row-gap: 12px;
     margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
   }
 }
 .scanning__icon {
