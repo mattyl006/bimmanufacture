@@ -10,6 +10,7 @@ module.exports = {
     counter: "./src/js/counter.js",
     cardsSwitch: "./src/js/cardsSwitch.js",
     popUp: "./src/js/popUp",
+    lazyLoading: "./src/js/lazyLoading",
   },
   output: {
     filename: "[name].[hash:8].js",

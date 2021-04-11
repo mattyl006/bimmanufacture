@@ -1220,6 +1220,11 @@ body {
     background-image: url("../assets/img/bg_desktop.svg");
   }
 }
+@media (max-height: 800px) {
+  body {
+    background-image: url("../assets/img/bg_laptop.svg");
+  }
+}
 
 main {
   width: 100%;
