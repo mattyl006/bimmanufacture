@@ -7,6 +7,9 @@
   justify-content: center;
   align-items: center;
 
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
+
   &__container {
     padding: 20px;
     position: absolute;
@@ -78,4 +81,8 @@
       height: 320px;
     }
   }
+}
+
+.contactVisible {
+  opacity: 1;
 }

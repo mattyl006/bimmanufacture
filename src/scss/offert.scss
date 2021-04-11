@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -81,4 +83,8 @@
       @include list_item;
     }
   }
+}
+
+.offertVisible {
+  opacity: 1;
 }

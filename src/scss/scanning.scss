@@ -9,6 +9,9 @@
   align-items: center;
   flex-direction: column;
 
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
+
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
@@ -132,4 +135,8 @@
       @include counter_number;
     }
   }
+}
+
+.scanningVisible {
+  opacity: 1;
 }

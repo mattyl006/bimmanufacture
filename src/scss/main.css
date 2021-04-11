@@ -278,6 +278,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 @media (min-width: 768px) {
   .offert {
@@ -361,6 +363,10 @@
   }
 }
 
+.offertVisible {
+  opacity: 1;
+}
+
 .scanning {
   width: 100%;
   min-height: 100vh;
@@ -368,6 +374,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .scanning__header {
   font-size: 20px;
@@ -518,6 +526,10 @@
   }
 }
 
+.scanningVisible {
+  opacity: 1;
+}
+
 .consulting {
   width: 100%;
   min-height: 100vh;
@@ -525,6 +537,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .consulting__header {
   font-size: 20px;
@@ -595,6 +609,10 @@
   }
 }
 
+.consultingVisible {
+  opacity: 1;
+}
+
 .modeling {
   width: 100%;
   min-height: 100vh;
@@ -602,6 +620,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .modeling__header {
   font-size: 20px;
@@ -672,6 +692,10 @@
   }
 }
 
+.modelingVisible {
+  opacity: 1;
+}
+
 .realizations {
   width: 100%;
   min-height: 100vh;
@@ -681,6 +705,8 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .realizations__header {
   font-size: 20px;
@@ -749,6 +775,8 @@
   z-index: 2;
   outline: transparent;
   background: transparent;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 @media (min-width: 1024px) {
   .realizations__switch-left, .realizations__switch-right {
@@ -778,6 +806,10 @@
 
 .iconRightTransparent {
   background-image: url("../assets/icons/arrow-right-transparent.svg");
+}
+
+.realizationsVisible {
+  opacity: 1;
 }
 
 .pop-up {
@@ -943,6 +975,8 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .references__header {
   font-size: 20px;
@@ -1079,12 +1113,18 @@
   background-image: url("../assets/icons/arrow-right-transparent.svg");
 }
 
+.referencesVisible {
+  opacity: 1;
+}
+
 .contact {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 .contact__container {
   padding: 20px;
@@ -1161,10 +1201,16 @@
   }
 }
 
+.contactVisible {
+  opacity: 1;
+}
+
 .footer {
   min-height: 88px;
   display: flex;
   align-items: center;
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
 }
 @media (min-width: 768px) {
   .footer {
@@ -1191,6 +1237,10 @@
   .footer__icon--yt {
     width: 90px;
   }
+}
+
+.footerVisible {
+  opacity: 1;
 }
 
 html {
