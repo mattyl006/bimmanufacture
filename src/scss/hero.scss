@@ -34,6 +34,7 @@
     @include h1_mobile;
     text-align: center;
     margin: 0 0 0 8px;
+    color: #4d4d4d;
 
     @media (min-width: 768px) {
       @include h1;
