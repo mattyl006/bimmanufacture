@@ -11,41 +11,33 @@
   align-items: center;
 
   &__container {
-    width: 280px;
+    width: 100%;
     background-color: $lightColorMoreTransparent;
-    border-radius: 6px;
-    padding: 16px;
+    padding: 8px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-    @media (min-width: 768px) {
-      width: 580px;
-    }
   }
 
   &__logo {
-    margin-bottom: 32px;
     width: 172px;
     height: 100px;
 
     @media (min-width: 768px) {
-      margin-bottom: 24px;
-      width: 240px;
-      height: 168px;
+      width: 182px;
+      height: 120px;
     }
   }
 
   &__header {
     @include h1_mobile;
-    margin: 0;
     text-align: center;
+    margin: 0 0 0 8px;
 
     @media (min-width: 768px) {
       @include h1;
-      margin-bottom: 8px;
+      margin: 0 0 0 24px;
       max-width: 380px;
     }
   }
