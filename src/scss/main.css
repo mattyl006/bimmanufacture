@@ -1174,12 +1174,12 @@
   }
 }
 .footer__icon--yt {
-  width: 64px;
+  width: 48px;
   margin-left: 0;
 }
 @media (min-width: 768px) {
   .footer__icon--yt {
-    width: 90px;
+    width: 70px;
   }
 }
 
