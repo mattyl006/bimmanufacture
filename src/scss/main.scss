@@ -30,20 +30,11 @@ body {
   color: $darkColor;
   background-color: $lightColor;
 
-  background-image: url("../assets/img/bg_mobile.svg");
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-
-  @media (min-width: 768px) {
-    background-image: url("../assets/img/bg_desktop.svg");
-  }
-
-  @media (max-height: 800px) {
-    background-image: url("../assets/img/bg_laptop.svg");
-  }
 }
 
 main {
