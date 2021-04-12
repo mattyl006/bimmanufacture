@@ -7,8 +7,11 @@ const referencesSection = document.querySelector('.references--js');
 const contactSection = document.querySelector('.contact--js');
 const footer = document.querySelector('.footer');
 
+
+console.log("Siema siema");
+
 const lazyLoadingOptions = {
-    rootMargin: '-50%',
+    rootMargin: '-30%',
 };
 
 const lazyLoadingOptionsWithoutMargin = {

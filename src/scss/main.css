@@ -58,7 +58,7 @@
   left: 0;
   height: calc(100vh + 16px);
   z-index: -1;
-  background-color: #28282D;
+  background-color: #F6F6F6;
 }
 @media (min-width: 768px) {
   .hero__background {
@@ -98,29 +98,14 @@
   }
 }
 .navigation {
-  width: calc(100% - 32px);
-  background-color: rgba(246, 246, 246, 0.8);
-  border-radius: 6px;
+  width: 100%;
+  background-color: rgba(40, 40, 45, 0.2);
   z-index: 2;
   backdrop-filter: blur(6px);
   transition: background-color ease-in 0.4s;
   position: fixed;
-  top: 8px;
-  left: 16px;
-}
-@media (min-width: 768px) {
-  .navigation {
-    width: calc(100% - 64px);
-    top: 16px;
-    left: 32px;
-  }
-}
-@media (min-width: 1440px) {
-  .navigation {
-    width: calc(100% - 256px);
-    top: 16px;
-    left: 128px;
-  }
+  top: 0;
+  left: 0;
 }
 .navigation__container {
   height: 36px;
@@ -134,26 +119,6 @@
     height: 68px;
   }
 }
-.navigation__home {
-  position: absolute;
-  top: 2px;
-  left: 4px;
-}
-@media (min-width: 768px) {
-  .navigation__home {
-    top: 4px;
-    left: 16px;
-  }
-}
-.navigation__logo {
-  width: auto;
-  height: 32px;
-}
-@media (min-width: 768px) {
-  .navigation__logo {
-    height: 60px;
-  }
-}
 .navigation__list {
   display: none;
   padding: 0;
@@ -161,9 +126,9 @@
   list-style: none;
   position: absolute;
   top: 36px;
-  left: 1%;
-  width: 98%;
-  background-color: rgba(246, 246, 246, 0.8);
+  left: 0;
+  width: 100%;
+  background-color: rgba(40, 40, 45, 0.9);
   border-radius: 0 0 4px 4px;
   opacity: 0;
   transition: background-color ease-in-out 0.4s;
@@ -181,7 +146,7 @@
 }
 .navigation__item {
   text-align: center;
-  border-bottom: solid 2px #28282D;
+  border-bottom: solid 2px #F6F6F6;
   transition: border-bottom-color ease-in-out 0.4s;
 }
 .navigation__item--last {
@@ -198,7 +163,7 @@
   font-weight: 400;
   line-height: 14px;
   text-decoration: none;
-  color: #28282D;
+  color: #F6F6F6;
   text-decoration: none;
   display: block;
   padding: 16px 0;
@@ -213,7 +178,7 @@
     font-weight: 400;
     line-height: 20px;
     display: inline-block;
-    padding: 0 16px 0 0;
+    padding: 0 32px 0 0;
     color: #28282D;
   }
 }
@@ -253,22 +218,6 @@
   display: block;
   opacity: 1;
   animation: opacityUp ease-in-out 0.6s;
-}
-
-.darkBackground {
-  background-color: rgba(40, 40, 45, 0.2);
-}
-
-.darkerBackground {
-  background-color: rgba(40, 40, 45, 0.9);
-}
-
-.lightText {
-  color: #F6F6F6;
-}
-
-.lightBorder {
-  border-bottom: solid 2px #F6F6F6;
 }
 
 .offert {

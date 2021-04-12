@@ -6,7 +6,6 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     navigation: "./src/js/navigation.js",
-    navObserver: "./src/js/navObserver.js",
     counter: "./src/js/counter.js",
     cardsSwitch: "./src/js/cardsSwitch.js",
     popUp: "./src/js/popUp",
@@ -84,7 +83,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "navigation", "navObserver", "counter", "cardsSwitch", "popUp", "lazyLoading"],
+      chunks: ["index", "navigation", "counter", "cardsSwitch", "popUp", "lazyLoading"],
       filename: "index.html",
     }),
   ],
