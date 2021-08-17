@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap");
 .hero {
   width: 100%;
-  height: calc(100vh + 32px);
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -46,38 +46,26 @@
 }
 .hero__background {
   position: absolute;
-  top: -16px;
+  top: -380px;
   left: 0;
-  height: calc(100vh + 16px);
   z-index: -1;
   background-color: #F6F6F6;
+  min-height: calc(100vh + 32px);
+  min-width: 100%;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero__background {
-    top: -32px;
-    height: calc(100vh + 32px);
-  }
-}
-@media (max-height: 800px) and (min-width: 768px) {
-  .hero__background {
-    width: 100%;
-  }
-}
-@media (min-width: 1700px) {
-  .hero__background {
-    top: -32px;
-    min-height: calc(100vh + 32px);
-    width: 100%;
+    left: -260px;
   }
 }
 .hero:after {
   content: "";
   position: absolute;
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(246, 246, 246, 0.9);
   filter: blur(4px);
   width: 120%;
   height: 24px;
-  bottom: 12px;
+  bottom: -14px;
   left: -12px;
 }
 
@@ -91,7 +79,7 @@
 }
 .navigation {
   width: 100%;
-  background-color: rgba(40, 40, 45, 0.2);
+  background-color: rgba(246, 246, 246, 0.6);
   z-index: 2;
   backdrop-filter: blur(6px);
   transition: background-color ease-in 0.4s;

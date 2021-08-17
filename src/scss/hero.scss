@@ -2,7 +2,7 @@
 
 .hero {
   width: 100%;
-  height: calc(100vh + 32px);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 
@@ -45,25 +45,15 @@
 
   &__background {
     position: absolute;
-    top: -16px;
+    top: -380px;
     left: 0;
-    height: calc(100vh + 16px);
     z-index: -1;
     background-color: $lightColor;
+    min-height: calc(100vh + 32px);
+    min-width: 100%;
 
-    @media (min-width: 768px) {
-      top: -32px;
-      height: calc(100vh + 32px);
-    }
-
-    @media (max-height: 800px) and (min-width: 768px) {
-      width: 100%;
-    }
-
-    @media (min-width: 1700px) {
-      top: -32px;
-      min-height: calc(100vh + 32px);
-      width: 100%;
+    @media (max-width: 768px) {
+      left: -260px;
     }
   }
 
@@ -74,7 +64,7 @@
     filter: blur(4px);
     width: 120%;
     height: 24px;
-    bottom: 12px;
+    bottom: -14px;
     left: -12px;
   }
 }
