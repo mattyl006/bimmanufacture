@@ -25,6 +25,23 @@ html {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $lightColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2C3C7;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A1A5;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   color: $darkColor;
