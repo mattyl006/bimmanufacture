@@ -17,6 +17,7 @@
   &__header {
     @include h2_mobile;
     margin: 0 0 36px 0;
+    text-transform: uppercase;
 
     @media (min-width: 768px) {
       @include h2;
@@ -74,6 +75,7 @@
     color: $darkColor;
     @include list_item_mobile;
     transition: opacity ease-in-out 0.4s;
+    text-transform: uppercase;
 
     &:hover {
       opacity: 0.5;

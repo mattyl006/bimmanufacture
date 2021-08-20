@@ -34,6 +34,7 @@
   text-align: center;
   margin: 0 0 0 8px;
   color: #4d4d4d;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .hero__header {
@@ -198,6 +199,7 @@
   display: block;
   padding: 16px 0;
   transition: all ease-in-out 0.4s;
+  text-transform: uppercase;
 }
 .navigation__link:hover {
   opacity: 0.5;
@@ -323,6 +325,7 @@
   font-weight: 300;
   line-height: 24px;
   margin: 0 0 36px 0;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .offert__header {
@@ -382,6 +385,7 @@
   line-height: 20px;
   text-decoration: none;
   transition: opacity ease-in-out 0.4s;
+  text-transform: uppercase;
 }
 .offert__link:hover {
   opacity: 0.5;
