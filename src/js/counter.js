@@ -1,7 +1,7 @@
-const scanningSection = document.querySelector('.scanning--js');
+const scanningSection = document.querySelector('.scanning__grid--js');
 
 const navObserverOptions = {
-    rootMargin: '-50%',
+    rootMargin: '0px',
 };
 
 const counterNum = document.querySelectorAll('.scanning__number--js');

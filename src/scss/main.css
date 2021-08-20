@@ -208,7 +208,7 @@
   .navigation__link {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     display: inline-block;
     padding: 0 32px 0 0;
     color: #28282D;
@@ -323,7 +323,7 @@
 .offert__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 36px 0;
   text-transform: uppercase;
 }
@@ -331,7 +331,7 @@
   .offert__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 80px 0 0;
     text-align: center;
     max-width: 220px;
@@ -410,49 +410,110 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 128px;
   opacity: 0;
   transition: opacity ease-in-out 1.6s;
 }
 .scanning__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .scanning__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
-    margin: 0 0 64px 0;
+    line-height: 48px;
+    margin: 0 0 36px 0;
   }
 }
 @media (min-width: 1024px) {
   .scanning__container {
     display: flex;
+    flex-direction: column;
     position: relative;
   }
 }
 .scanning__paragraph {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
-  margin: 0 0 12px 0;
+  line-height: 24px;
+  margin: 0 0 24px 0;
   padding: 0 8px;
   max-width: 480px;
+}
+.scanning__paragraph--label {
+  margin: 0 0 16px 0;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .scanning__paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-    margin: 0 0 48px 0;
-    max-width: 580px;
+    line-height: 24px;
+    max-width: 590px;
   }
 }
 @media (min-width: 1024px) {
   .scanning__paragraph {
-    margin: 0 32px 0 0;
+    margin: 0 32px 24px 0;
+  }
+  .scanning__paragraph--label {
+    margin: 0 0 16px 0;
+  }
+}
+.scanning__list {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0 8px;
+  max-width: 480px;
+}
+@media (min-width: 768px) {
+  .scanning__list {
+    max-width: 590px;
+  }
+}
+@media (min-width: 1024px) {
+  .scanning__list {
+    margin: 0 32px 24px 0;
+  }
+}
+.scanning__item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 12px 0 12px 24px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .scanning__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.scanning__item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -24px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/img/dot_mobile.svg");
+}
+@media (min-width: 768px) {
+  .scanning__item:before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: -36px;
   }
 }
 .scanning__grid {
@@ -583,14 +644,14 @@
 .consulting__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
 }
 @media (min-width: 768px) {
   .consulting__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 0 32px 0;
   }
 }
@@ -611,9 +672,9 @@
   }
 }
 .consulting__paragraph {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 24px;
   margin: 0 0 32px 0;
   max-width: 480px;
   padding: 0 8px;
@@ -622,7 +683,7 @@
   .consulting__paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     max-width: 580px;
   }
 }
@@ -666,14 +727,14 @@
 .modeling__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
 }
 @media (min-width: 768px) {
   .modeling__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 0 32px 0;
   }
 }
@@ -694,9 +755,9 @@
   }
 }
 .modeling__paragraph {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 24px;
   margin: 0 0 32px 0;
   max-width: 480px;
   padding: 0 8px;
@@ -705,7 +766,7 @@
   .modeling__paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     max-width: 580px;
   }
 }
@@ -751,14 +812,14 @@
 .realizations__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
 }
 @media (min-width: 768px) {
   .realizations__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 0 64px 0;
   }
 }
@@ -906,21 +967,21 @@
 .pop-up__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
 }
 @media (min-width: 1024px) {
   .pop-up__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 0 32px 0;
   }
 }
 .pop-up__paragraph {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 24px;
   margin: 0 0 24px 0;
   max-width: 280px;
 }
@@ -933,7 +994,7 @@
   .pop-up__paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     max-width: 440px;
   }
 }
@@ -1021,14 +1082,14 @@
 .references__header {
   font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   margin: 0 0 24px 0;
 }
 @media (min-width: 768px) {
   .references__header {
     font-size: 32px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 48px;
     margin: 0 0 64px 0;
   }
 }
@@ -1191,9 +1252,9 @@
   }
 }
 .contact__paragraph {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   margin: 0 0 8px 0;
 }
@@ -1201,7 +1262,7 @@
   .contact__paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 .contact__paragraph--adress {
@@ -1209,9 +1270,9 @@
 }
 .contact__link {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   text-decoration: none;
   margin: 0;
@@ -1220,7 +1281,7 @@
   .contact__link {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 .contact__link--mail {
