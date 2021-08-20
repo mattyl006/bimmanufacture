@@ -44,6 +44,63 @@
     max-width: 380px;
   }
 }
+.hero__info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(246, 246, 246, 0.9);
+  padding: 0 6px;
+  color: #28282D;
+  opacity: 0;
+  transform: translateX(1000px);
+}
+.hero__info:hover .hero__info-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+.hero__paragraph {
+  font-size: 12px;
+  margin: 6px 0;
+  width: 280px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  .hero__paragraph {
+    width: 380px;
+  }
+}
+.hero__button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/icons/information-button.svg");
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.hero__button:hover .hero__info {
+  display: block;
+}
+@media (min-width: 768px) {
+  .hero__button {
+    bottom: 18px;
+    right: 18px;
+    width: 32px;
+    height: 32px;
+  }
+}
 .hero__background {
   position: absolute;
   top: -380px;
@@ -61,26 +118,18 @@
 .hero:after {
   content: "";
   position: absolute;
-  background-color: rgba(246, 246, 246, 0.9);
+  background-color: #F6F6F6;
   filter: blur(4px);
-  width: 120%;
+  width: 120vw;
   height: 24px;
-  bottom: -14px;
+  bottom: -16px;
   left: -12px;
 }
 
-@keyframes opacityUp {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .navigation {
   width: 100%;
   background-color: rgba(246, 246, 246, 0.6);
-  z-index: 2;
+  z-index: 5;
   backdrop-filter: blur(6px);
   transition: background-color ease-in 0.4s;
   position: fixed;
@@ -93,14 +142,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 40px;
 }
 @media (min-width: 768px) {
   .navigation__container {
     height: 68px;
+    padding-right: 0;
   }
 }
 .navigation__list {
-  display: none;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -110,8 +160,8 @@
   width: 100%;
   background-color: rgba(40, 40, 45, 0.9);
   border-radius: 0 0 4px 4px;
-  opacity: 0;
-  transition: background-color ease-in-out 0.4s;
+  transform: translateY(-300px);
+  z-index: 4;
 }
 @media (min-width: 768px) {
   .navigation__list {
@@ -139,7 +189,7 @@
   }
 }
 .navigation__link {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 14px;
   text-decoration: none;
@@ -184,20 +234,73 @@
   }
 }
 .navigation__hamburger {
-  width: 20px;
-  height: 18px;
-  margin: 0 12px;
+  display: inline-block;
+  position: fixed;
+  top: 6px;
+  right: 12px;
+  border: none;
+  padding: 4px;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 4;
 }
 @media (min-width: 768px) {
   .navigation__hamburger {
     display: none;
   }
 }
+.navigation__hamburger:focus {
+  outline: #42DE42 solid 1px;
+}
+.navigation__hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+.navigation__hamburger--active .hamburger__inner::before {
+  transform: translateY(6px) rotate(45deg);
+}
+.navigation__hamburger--active .hamburger__inner::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.hamburger__box {
+  width: 18px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger__inner {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(40, 40, 45, 0.9);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s 0.1s ease-in-out;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(40, 40, 45, 0.9);
+  position: absolute;
+  content: "";
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.hamburger__inner::before {
+  top: -6px;
+}
+.hamburger__inner::after {
+  top: 6px;
+}
 
 .visible {
-  display: block;
-  opacity: 1;
-  animation: opacityUp ease-in-out 0.6s;
+  transform: translateY(0);
+}
+
+.menu--animation {
+  transition: transform 0.4s 0.1s ease-in-out;
 }
 
 .offert {
