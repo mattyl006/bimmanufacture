@@ -11,6 +11,9 @@
   overflow: hidden;
   position: relative;
 
+  opacity: 0;
+  transition: opacity ease-in-out 1.6s;
+
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
@@ -80,6 +83,9 @@
     outline: transparent;
     background: transparent;
 
+    opacity: 0;
+    transition: opacity ease-in-out 1.6s;
+
     @media (min-width: 1024px) {
       display: none;
     }
@@ -110,4 +116,8 @@
 
 .iconRightTransparent {
   background-image: url("../assets/icons/arrow-right-transparent.svg");
+}
+
+.realizationsVisible {
+  opacity: 1;
 }

@@ -3,7 +3,7 @@
 $lightColor: #F6F6F6;
 $darkColor: #28282D;
 
-$lightColorTransparent: rgba(#F6F6F6, 0.8);
+$lightColorTransparent: rgba(#F6F6F6, 0.9);
 $lightColorMoreTransparent: rgba(#F6F6F6, 0.6);
 $darkColorTransparent: rgba(#28282D, 0.2);
 $darkColorLessTransparent: rgba(#28282D, 0.9);
@@ -27,13 +27,13 @@ $green: #42DE42;
 }
 
 @mixin h1 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 36px;
 }
 
 @mixin h1_mobile {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -65,7 +65,7 @@ $green: #42DE42;
 }
 
 @mixin nav_item_mobile {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 14px;
   text-decoration: none;
