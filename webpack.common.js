@@ -5,6 +5,7 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
+    lazyLoading: "./src/js/lazyLoading.js",
     navigation: "./src/js/navigation.js",
     counter: "./src/js/counter.js",
     cardsSwitch: "./src/js/cardsSwitch.js",

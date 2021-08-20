@@ -26,8 +26,6 @@ const leftSwitchRef = document.querySelector('.references__switch-left--js');
 const rightSwitchRef = document.querySelector('.references__switch-right--js');
 const cardsRef = document.querySelector('.references__cards--js');
 
-console.log(rightSwitchRef);
-
 leftSwitchRef.addEventListener('click', () => {
     if(cardsRef.classList.contains('switchRight2')) {
         cardsRef.classList.remove('switchRight2');

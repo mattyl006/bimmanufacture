@@ -2,7 +2,7 @@
 
 .realizations {
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
 
   display: flex;
   justify-content: center;
@@ -17,6 +17,7 @@
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
+    text-transform: uppercase;
 
     @media (min-width: 768px) {
       @include h2;
@@ -80,10 +81,7 @@
     padding: 0;
     border: none;
     z-index: 2;
-    outline: transparent;
     background: transparent;
-
-    opacity: 0;
     transition: opacity ease-in-out 1.6s;
 
     @media (min-width: 1024px) {

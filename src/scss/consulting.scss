@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 128px;
 
   opacity: 0;
   transition: opacity ease-in-out 1.6s;
@@ -15,14 +16,11 @@
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
+    text-transform: uppercase;
 
     @media (min-width: 768px) {
       @include h2;
-      margin: 0 0 32px 0;
-    }
-
-    @media (min-width: 1280px) {
-      margin: 0 0 64px 0;
+      margin: 0 0 36px 0;
     }
   }
 
@@ -37,35 +35,97 @@
     }
   }
 
-  &__paragraph {
-    @include normal_mobile;
-    margin: 0 0 32px 0;
-    max-width: 480px;
-    padding: 0 8px;
-
-    @media (min-width: 768px) {
-      @include normal;
-      max-width: 580px;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: 1280px) {
-      margin: 0 64px 0 0;
+      align-items: flex-start;
     }
   }
 
-  &__placeholder {
-    width: 300px;
-    height: 178px;
+  &__paragraph {
+    @include normal_mobile;
+    margin: 0 0 24px 0;
+    padding: 0 8px;
+    max-width: 480px;
+
+    &--label {
+      margin: 0 0 16px 0;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      @include normal;
+      max-width: 590px;
+    }
+
+    @media (min-width: 1280px) {
+      margin: 0 32px 24px 0;
+
+      &--label {
+        margin: 0 0 16px 0;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 0 24px 0;
+    padding: 0 8px;
+    max-width: 480px;
+
+    @media (min-width: 768px) {
+      max-width: 590px;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 32px 24px 0;
+    }
+  }
+
+  &__item {
+    @include normal_mobile;
+    margin: 12px 0 12px 24px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      @include normal;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      left: -24px;
+      width: 16px;
+      height: 16px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../assets/img/dot_mobile.svg");
+
+      @media (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+        top: 2px;
+        left: -36px;
+      }
+    }
+  }
+
+  &__animation {
+    width: calc(200px + 30vw);
+    height: auto;
     background-color: #C4C4C4;
 
     @media (min-width: 768px) {
       width: 580px;
-      height: 240px;
-    }
-
-    @media (min-width: 1280px) {
-      width: 480px;
-      height: 340px;
+      height: auto;
     }
   }
 }

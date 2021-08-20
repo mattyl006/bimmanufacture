@@ -16,7 +16,6 @@
   padding: 8px;
 
   @media (min-width: 768px) {
-    flex-direction: row;
     padding: 16px;
   }
 
@@ -31,16 +30,32 @@
 
   @media (min-width: 1200px) {
     width: 80%;
-    min-height: auto;
     height: 70vh;
     top: 15vh;
     left: 10%;
     padding: 64px;
   }
 
-  &__container {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+
     @media (min-width: 768px) {
       margin: 0 24px 0 0;
+      max-width: none;
     }
 
     @media (min-width: 1024px) {
@@ -61,7 +76,7 @@
   &__paragraph {
     @include normal_mobile;
     margin: 0 0 24px 0;
-    max-width: 280px;
+    max-width: 380px;
 
     @media (min-width: 768px) {
       margin: 0;
@@ -73,14 +88,41 @@
     }
   }
 
-  &__placeholder {
+  &__animation {
     width: 280px;
     height: 178px;
-    background-color: #7F7F7F;
+    margin-bottom: 24px;
 
     @media (min-width: 768px) {
       width: 440px;
       height: 340px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__counter {
+    max-width: 320px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: none;
+    }
+
+    &-paragraph {
+      @include counter_text_mobile;
+      margin: 8px 0;
+
+      @media (min-width: 768px) {
+        margin: 8px 12px;
+        max-width: 320px;
+      }
+    }
+
+    &-number {
+      @include counter_number_mobile;
     }
   }
 

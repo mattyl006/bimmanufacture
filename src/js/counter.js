@@ -17,11 +17,7 @@ const countryUpdate = 1000;
 
 const navObserver = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            console.log("I am not seeing scanning section.");
-        }
-        else {
-            console.log("I am seeing scanning section!");
+        if(entry.isIntersecting) {
             setTimeout(() => {
                 counterNum.forEach(c => {
                     let speed = 1;
