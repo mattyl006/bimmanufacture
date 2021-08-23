@@ -9,6 +9,8 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 128px;
+  padding: 64px 16px 0;
+
 
   opacity: 0;
   transition: opacity ease-in-out 1.6s;
@@ -17,6 +19,7 @@
     @include h2_mobile;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: 768px) {
       @include h2;
@@ -25,25 +28,7 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    @media (min-width: 1280px) {
-      flex-direction: row;
-    }
-  }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: 1280px) {
-      align-items: flex-start;
-    }
   }
 
   &__paragraph {
@@ -61,14 +46,6 @@
       @include normal;
       max-width: 590px;
     }
-
-    @media (min-width: 1280px) {
-      margin: 0 32px 24px 0;
-
-      &--label {
-        margin: 0 0 16px 0;
-      }
-    }
   }
 
   &__list {
@@ -79,10 +56,6 @@
 
     @media (min-width: 768px) {
       max-width: 590px;
-    }
-
-    @media (min-width: 1024px) {
-      margin: 0 32px 24px 0;
     }
   }
 
