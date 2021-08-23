@@ -8,6 +8,7 @@ module.exports = {
     lazyLoading: "./src/js/lazyLoading.js",
     navigation: "./src/js/navigation.js",
     counter: "./src/js/counter.js",
+    counterProject1: "./src/js/counterProject1.js",
     cardsSwitch: "./src/js/cardsSwitch.js",
     popUp: "./src/js/popUp",
   },
@@ -83,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "navigation", "counter", "cardsSwitch", "popUp", "lazyLoading"],
+      chunks: ["index", "navigation", "counter", "cardsSwitch", "popUp", "lazyLoading", "counterProject1"],
       filename: "index.html",
     }),
   ],

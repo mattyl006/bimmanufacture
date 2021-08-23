@@ -1,6 +1,6 @@
 const scanningSection = document.querySelector('.scanning__grid--js');
 
-const navObserverOptions = {
+const scanningObserverOptions = {
     rootMargin: '0px',
 };
 
@@ -15,7 +15,7 @@ const businessUpdate = 100;
 const countrySpeed = 1100;
 const countryUpdate = 1000;
 
-const navObserver = new IntersectionObserver(function (entries, observer) {
+const scanningObserver = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             setTimeout(() => {
@@ -54,6 +54,6 @@ const navObserver = new IntersectionObserver(function (entries, observer) {
             }, 1000);
         }
     })
-}, navObserverOptions);
+}, scanningObserverOptions);
 
-navObserver.observe(scanningSection);
+scanningObserver.observe(scanningSection);

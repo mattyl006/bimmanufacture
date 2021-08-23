@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(#BDBDBD, 0.6);
+  background-color: rgba(#BDBDBD, 0.8);
   backdrop-filter: blur(6px);
   z-index: 5;
   padding: 8px;
@@ -22,15 +22,15 @@
   @media (min-width: 1024px) {
     width: calc(80% + 176px);
     min-height: auto;
-    height: 56vh;
+    height: 66vh;
     top: 22vh;
     left: calc(10% - 88px);
     padding: 24px;
   }
 
   @media (min-width: 1200px) {
-    width: 80%;
-    height: 70vh;
+    width: 86%;
+    height: 86vh;
     top: 15vh;
     left: 10%;
     padding: 64px;
@@ -49,8 +49,6 @@
   &__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 320px;
 
     @media (min-width: 768px) {
@@ -61,11 +59,17 @@
     @media (min-width: 1024px) {
       margin: 0 48px 0 0;
     }
+
+    @media (min-width: 1200px) {
+      margin: 0 64px 0 0;
+    }
   }
 
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
+    text-transform: uppercase;
+    max-width: 440px;
 
     @media (min-width: 1024px) {
       @include h2;
@@ -79,7 +83,7 @@
     max-width: 380px;
 
     @media (min-width: 768px) {
-      margin: 0;
+      margin: 0 0 16px 0;
     }
 
     @media (min-width: 1024px) {
@@ -124,6 +128,13 @@
     &-number {
       @include counter_number_mobile;
     }
+
+    &--project2 {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: start;
+    }
   }
 
   &__close {
@@ -137,6 +148,7 @@
     height: 16px;
     background-image: url("../assets/icons/close.svg");
     z-index: 6;
+    cursor: pointer;
   }
 }
 
