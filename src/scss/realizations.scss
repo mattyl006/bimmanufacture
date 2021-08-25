@@ -2,7 +2,7 @@
 
 .realizations {
   width: 100%;
-  min-height: 120vh;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -53,6 +53,7 @@
     padding: 0;
     transition: transform ease-in-out 0.4s;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.06);

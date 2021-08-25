@@ -36,7 +36,6 @@
   &__paragraph {
     @include normal_mobile;
     margin: 0 0 24px 0;
-    padding: 0 8px;
     max-width: 480px;
 
     &--label {
