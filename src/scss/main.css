@@ -927,8 +927,8 @@
 }
 @media (min-width: 1024px) {
   .realizations__container-center {
-    width: calc(220px + 8vw);
-    height: calc(340px + 12vw);
+    width: calc(220px + 6vw);
+    height: calc(340px + 10vw);
   }
 }
 .realizations__container-left {
@@ -939,8 +939,8 @@
 }
 @media (min-width: 1024px) {
   .realizations__container-left, .realizations__container-right {
-    width: calc(200px + 6vw);
-    height: calc(300px + 10vw);
+    width: calc(220px + 6vw);
+    height: calc(340px + 10vw);
   }
 }
 .realizations__bar {

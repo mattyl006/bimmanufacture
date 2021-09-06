@@ -62,8 +62,8 @@
     background-image: url("../assets/img/centrum.jpg");
 
     @media (min-width: 1024px) {
-      width: calc(220px + 8vw);
-      height: calc(340px + 12vw);
+      width: calc(220px + 6vw);
+      height: calc(340px + 10vw);
     }
   }
 
@@ -77,8 +77,8 @@
 
   &__container-left, &__container-right {
     @media (min-width: 1024px) {
-      width: calc(200px + 6vw);
-      height: calc(300px + 10vw);
+      width: calc(220px + 6vw);
+      height: calc(340px + 10vw);
     }
   }
 
