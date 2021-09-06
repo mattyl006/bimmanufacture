@@ -92,7 +92,7 @@
   &__paragraph {
     @include normal_mobile;
     margin: 8px 0;
-    max-width: 380px;
+    max-width: 320px;
 
     @media (min-width: 1024px) {
       @include normal;
@@ -159,6 +159,7 @@
 
     &-number {
       @include counter_number_mobile;
+      margin-right: 4px;
     }
 
     &--project2 {

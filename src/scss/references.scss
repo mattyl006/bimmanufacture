@@ -17,6 +17,7 @@
   &__header {
     @include h2_mobile;
     margin: 0 0 24px 0;
+    text-transform: uppercase;
 
     @media (min-width: 768px) {
       @include h2;

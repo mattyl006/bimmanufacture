@@ -57,12 +57,12 @@
       width: 24px;
       height: 26px;
       position: absolute;
-      background-image: url("../assets/img/dot_mobile.svg");
+      background-image: url("../assets/icons/dot_mobile.svg");
       top: -4px;
       left: 0;
 
       @media (min-width: 768px) {
-        background-image: url("../assets/img/dot_desktop.svg");
+        background-image: url("../assets/icons/dot_desktop.svg");
         width: 34px;
         height: 42px;
         top: -8px;

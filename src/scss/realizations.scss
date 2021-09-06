@@ -26,10 +26,9 @@
   }
 
   &__cards {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50vw;
+    display: flex;
+    margin: 0 25vw;
+    align-items: center;
     transition: transform ease-in-out 0.5s;
 
     @media (min-width: 1024px) {
@@ -37,10 +36,69 @@
     }
   }
 
-  &__container {
+  &__container-left, &__container-center, &__container-right {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: calc(200px + 12vw);
+    height: calc(300px + 20vw);
+    background-color: #C4C4C4;
+    transition: transform ease-in-out 0.4s;
+    position: relative;
+    margin: 0 25vw;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+
+  &__container-center {
+    background-image: url("../assets/img/centrum.jpg");
+
+    @media (min-width: 1024px) {
+      width: calc(220px + 8vw);
+      height: calc(340px + 12vw);
+    }
+  }
+
+  &__container-left {
+    background-image: url("../assets/img/scan.jpg");
+  }
+
+  &__container-right {
+    background-image: url("../assets/img/library1.jpg");
+  }
+
+  &__container-left, &__container-right {
+    @media (min-width: 1024px) {
+      width: calc(200px + 6vw);
+      height: calc(300px + 10vw);
+    }
+  }
+
+  &__bar {
+    width: 100%;
+    background-color: $lightColorTransparent;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__paragraph {
+    @include normal_mobile;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      @include normal;
+    }
   }
 
   &__button-left, &__button-center, &__button-right {
@@ -49,11 +107,14 @@
     display: block;
     width: calc(200px + 12vw);
     height: calc(300px + 20vw);
-    background-color: #C4C4C4;
+    background-color: transparent;
     padding: 0;
-    transition: transform ease-in-out 0.4s;
     text-transform: uppercase;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform ease-in-out 0.4s;
 
     &:hover {
       transform: scale(1.06);

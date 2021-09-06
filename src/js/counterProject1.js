@@ -1,6 +1,6 @@
 const scanningSectionProject1 = document.querySelector('.pop-up__counter--js');
 
-const counterNum = document.querySelectorAll('.pop-up__counter-number--js');
+const counterNum = document.querySelectorAll('.pop-up__counter-number1--js');
 
 const scanningObserverOptions = {
     rootMargin: '0px',
