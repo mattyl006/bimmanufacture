@@ -115,16 +115,37 @@
   }
 
   &__background {
+    display: none;
     position: absolute;
-    top: -380px;
+    top: 0;
     left: 0;
     z-index: -1;
     background-color: $lightColor;
     min-height: calc(100vh + 32px);
     min-width: 100%;
 
-    @media (max-width: 768px) {
-      left: -260px;
+    &--854w {
+      @media (max-width: 854px) {
+        display: block;
+      }
+    }
+
+    &--1280w {
+      @media (min-width: 854px) and (max-width: 1280px) {
+        display: block;
+      }
+    }
+
+    &--1920w {
+      @media (min-width: 1280px) and (max-width: 1920px) {
+        display: block;
+      }
+    }
+
+    &--2560w {
+      @media (min-width: 1920px) {
+        display: block;
+      }
     }
   }
 
