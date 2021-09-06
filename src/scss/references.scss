@@ -56,40 +56,28 @@
     background-position: center center;
 
     @media (min-width: 1024px) {
-      width: calc(96px + 6vw);
-      height: calc(144px + 12vw);
+      width: calc(90px + 8vw);
+      height: calc(112px + 14vw);
     }
 
     &--1 {
-      background-image: url("../assets/img/ref1_pl.png");
+      background-image: url("../assets/img/ref1_eng.jpg");
     }
 
     &--2 {
-      background-image: url("../assets/img/ref2_pl.png");
-      @media (min-width: 1024px) {
-        width: calc(96px + 8vw);
-        height: calc(144px + 14vw);
-      }
+      background-image: url("../assets/img/ref2_eng.jpg");
     }
 
     &--3 {
-      background-image: url("../assets/img/ref3_pl.png");
-      @media (min-width: 1024px) {
-        width: calc(96px + 10vw);
-        height: calc(144px + 16vw);
-      }
+      background-image: url("../assets/img/ref3_eng.jpg");
     }
 
     &--4 {
-      background-image: url("../assets/img/ref4_pl.png");
-      @media (min-width: 1024px) {
-        width: calc(96px + 8vw);
-        height: calc(144px + 14vw);
-      }
+      background-image: url("../assets/img/ref4_eng.jpg");
     }
 
     &--5 {
-      background-image: url("../assets/img/ref5.png");
+      background-image: url("../assets/img/ref5.jpg");
     }
 
     &:hover {
