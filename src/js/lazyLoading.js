@@ -7,6 +7,21 @@ const referencesSection = document.querySelector('.references--js');
 const contactSection = document.querySelector('.contact--js');
 const footer = document.querySelector('.footer');
 
+const ua = window.navigator.userAgent;
+const msie = ua.indexOf("MSIE ");
+if(!(msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))) {
+    offertSection.classList.remove('offertVisible');
+    scanningSection.classList.remove('scanningVisible');
+    modelingSection.classList.remove('modelingVisible');
+    consultingSection.classList.remove('consultingVisible');
+    realizationsSection.classList.remove('realizationsVisible');
+    referencesSection.classList.remove('referencesVisible');
+    contactSection.classList.remove('contactVisible');
+    footer.classList.remove('footerVisible');
+} else {
+    alert("Website not work correctly in this browser, please change browser.")
+}
+
 const lazyLoadingOptions = {
     rootMargin: '-30%',
 };
@@ -95,11 +110,13 @@ const footerObserver = new IntersectionObserver(function (entries, observer) {
     })
 }, lazyLoadingOptionsWithoutMargin);
 
-offertObserver.observe(offertSection);
-scanningObserver.observe(scanningSection);
-modelingObserver.observe(modelingSection);
-consultingObserver.observe(consultingSection);
-realizationsObserver.observe(realizationsSection);
-referencesObserver.observe(referencesSection);
-contactObserver.observe(contactSection);
-footerObserver.observe(footer);
+if(msie < 0) {
+    offertObserver.observe(offertSection);
+    scanningObserver.observe(scanningSection);
+    modelingObserver.observe(modelingSection);
+    consultingObserver.observe(consultingSection);
+    realizationsObserver.observe(realizationsSection);
+    referencesObserver.observe(referencesSection);
+    contactObserver.observe(contactSection);
+    footerObserver.observe(footer);
+}
