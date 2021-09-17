@@ -10,11 +10,18 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 768px) {
+    background-image: url("../assets/img/hero-image.jpg");
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+  }
+
   &__container {
     width: 100%;
     background-color: $lightColorMoreTransparent;
     padding: 8px;
-
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +76,7 @@
       .hero__info-content {
         opacity: 1;
         transform: translateX(0);
+        z-index: 11;
       }
     }
   }
@@ -98,7 +106,7 @@
     background-image: url("../assets/icons/information-button.svg");
     border: none;
     cursor: pointer;
-    z-index: 2;
+    z-index: 12;
 
     &:hover {
       .hero__info {
@@ -115,37 +123,16 @@
   }
 
   &__background {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     background-color: $lightColor;
     min-height: calc(100vh + 32px);
     min-width: 100%;
 
-    &--854w {
-      @media (max-width: 854px) {
-        display: block;
-      }
-    }
-
-    &--1280w {
-      @media (min-width: 854px) and (max-width: 1280px) {
-        display: block;
-      }
-    }
-
-    &--1920w {
-      @media (min-width: 1280px) and (max-width: 1920px) {
-        display: block;
-      }
-    }
-
-    &--2560w {
-      @media (min-width: 1920px) {
-        display: block;
-      }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 

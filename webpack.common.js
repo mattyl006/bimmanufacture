@@ -12,7 +12,8 @@ module.exports = {
     counterProject2: "./src/js/counterProject2.js",
     counterProject3: "./src/js/counterProject3.js",
     cardsSwitch: "./src/js/cardsSwitch.js",
-    popUp: "./src/js/popUp",
+    popUp: "./src/js/popUp.js",
+    languages: "./src/js/languages.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -87,7 +88,7 @@ module.exports = {
       template: "./src/pages/index.html",
       inject: true,
       chunks: ["index", "navigation", "counter", "cardsSwitch", "popUp",
-        "lazyLoading", "counterProject1", "counterProject2", "counterProject3"],
+        "lazyLoading", "counterProject1", "counterProject2", "counterProject3", "languages"],
       filename: "index.html",
     }),
   ],
